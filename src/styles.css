@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+.main-wrapper {
+    margin-top: 50px;
+}
+
+.form-wrapper {
+    border : 1px solid #998f8f;
+    padding: 35px;
+}
+
+.form-wrapper h3 {
+    font-weight: 600;
+}
+
+table, td, th { 
+    padding: 5px; 
+    border: 1px solid #1c87c9;
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+li{
+    display: inline;
+    padding: 10px;
+}

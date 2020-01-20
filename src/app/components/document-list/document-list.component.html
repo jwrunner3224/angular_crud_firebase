@@ -1,0 +1,39 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3 form-wrapper">
+        <h3 class="text-center">Document List</h3>
+        <table>
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Author</th>
+                <td></td>
+              </tr>
+            </thead>
+          
+            <tbody>
+              <tr *ngFor="let document of documents">
+                <td>{{ document.payload.doc.data().title }}</td>
+                <td>{{ document.payload.doc.data().description }}</td>
+                <td>{{ document.payload.doc.data().author }}</td>
+                <td>
+                  <button class="btn btn-primary" [routerLink]="['/edit-document/', document.payload.doc.id]"><i class="fa fa-pencil"></i></button>
+                  <button class="btn btn-primary" (click)="deleteDocument(document)"><i class="fa fa-trash"></i></button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
